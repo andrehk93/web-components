@@ -4,8 +4,7 @@ import { Header } from "./Header";
 
 class HeaderWebComponent extends HTMLElement {
     connectedCallback() {
-        const shadowContainer = document.createElement('div');
-        const shadowRoot = shadowContainer.attachShadow({ mode: 'closed' });
+        const shadowRoot = this.attachShadow({ mode: 'closed' });
 
         const reactRoot = document.createElement('div');
         const styleTag = document.createElement('link');
