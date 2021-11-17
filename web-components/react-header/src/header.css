@@ -1,0 +1,68 @@
+h1 {
+    margin: 0;
+}
+
+.header {
+    text-align: left;
+}
+
+.header__inner {
+    padding: 2rem;
+    background: #3d3d3d;
+    color: white;
+    text-align: left;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.header__tools {
+    display: flex;
+}
+
+.header__tools button {
+    background: none;
+    color: white;
+    text-decoration: 1px solid underline white;
+    appearance: none;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    margin-left: 1rem
+}
+
+.menu {
+    display: flex;
+    padding: 2rem;
+    background: #3d3d3d;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-top: 1px solid white;
+    box-shadow: 0px 6px 10px 1px #a1a1a1;
+    transform: translateY(-200px);
+    opacity: 0.5;
+    transition: transform 600ms linear, opacity 600ms linear;
+}
+
+.menu--is-animating {
+    opacity: 1;
+}
+
+.menu--is-animating.menu--is-open {
+    transform: translateY(0)
+}
+
+.menu a {
+    text-decoration: 1px solid underline white;
+    color: white;
+    margin-right: 8px;
+}
+
+a:hover {
+    text-decoration-color: #e34b12;
+}

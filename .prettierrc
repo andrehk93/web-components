@@ -1,0 +1,9 @@
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "jsxSingleQuote": true,
+  "printWidth": 80,
+  "vueIndentScriptAndStyle": true,
+  "singleQuote": true,
+  "semi": true
+}

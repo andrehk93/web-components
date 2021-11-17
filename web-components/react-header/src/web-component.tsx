@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Header } from "./Header";
 
+import './header.css';
+
 class HeaderWebComponent extends HTMLElement {
     connectedCallback() {
         const shadowRoot = this.attachShadow({ mode: 'closed' });
@@ -9,7 +11,7 @@ class HeaderWebComponent extends HTMLElement {
         const reactRoot = document.createElement('div');
         const styleTag = document.createElement('link');
         styleTag.rel = 'stylesheet';
-        styleTag.href = 'header-web-component.css';
+        styleTag.href = 'http://localhost:8081/header-web-component.css';
 
         shadowRoot.appendChild(styleTag);
         shadowRoot.appendChild(reactRoot);
