@@ -22,6 +22,13 @@
 				<section>
 					<h1>Web Components</h1>
 					<h2 style="font-size: 32px">Andreas Kvistad</h2>
+					<aside class="notes">
+						Context - Frontend web applications, any framework really
+						<br>
+						Created with HTML re-usability in mind
+						<br>
+						Talk about: What are they, how do they work, and how can they help you?
+					</aside>
 				</section>
 
 				<section>
@@ -45,6 +52,19 @@
 						<li>Can be exposed by script, NPM, etc.</li>
 						<li>Buttons, headers, forms, menus ++</li>
 					</ul>
+					<aside class="notes">
+						Can be inserted into the DOM as many times as needed
+						<br>
+						If it works in one application - it works in "all"
+						<br>
+						Perfect for adding new modern functionality into legacy applications
+						<br>
+						Can be exposed by script for "live" distributed updates
+						<br>
+						Can also be exposed via package managers
+						<br>
+						Can be anything from small buttons to large forms, menus, etc.
+					</aside>
 				</section>
 
 				<section>
@@ -54,6 +74,13 @@
 						<li>Agnostic to framework</li>
 						<li>DevTools</li>
 					</ul>
+					<aside class="notes">
+						Offers complete CSS isolation, DOM isolation, Debug capabilities, etc.
+						<br>
+						Makes it thus agnostic to framework, but bear in mind some are more supported than others
+						<br>
+						Ideal for settings where common dependencies creates issues with versioning etc. (e.g. design systems)
+					</aside>
 				</section>
 
 				<section>
@@ -64,6 +91,18 @@
 						<li>Shadow DOM</li>
 						<li>HTML Templates</li>
 					</ul>
+
+					<aside class="notes">
+						Custom elements - a registry of additional HTML elements to render
+						<br>
+						Must be hyphenated, e.g. itera-header
+						<br>
+						Shadow DOM - Empowers Web Components with encapsulation, and offers a separated DOM for the WC
+						<br>
+						Enables "private" execution of scripts and styles within the Shadow DOM and not the original DOM
+						<br>
+						HTML Templates - Supports HTML template and slot elements, but I won't cover those here
+					</aside>
 				</section>
 
 				<section>
